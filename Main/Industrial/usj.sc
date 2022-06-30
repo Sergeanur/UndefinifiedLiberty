@@ -90,9 +90,9 @@ IF IS_COLLISION_IN_MEMORY LEVEL_INDUSTRIAL
 		ENDIF
 		IF LOCATE_PLAYER_IN_CAR_3D player 793.17 -929.963 42.166 4.0 2.0 3.0 0 //OVER CALLAHAN BRIDGE
 			usj_number = 11
-			camera_x = 853.8542
-			camera_y = -927.6523
-			camera_z = 34.0808
+			camera_x = 841.8475//853.8542
+			camera_y = -930.1524//-927.6523
+			camera_z = 34.3645//34.0808
 			GOTO the_jump
 		ENDIF
 	ENDIF
@@ -484,7 +484,7 @@ WHILE IS_CAR_IN_AIR_PROPER players_car_usj
 
 ENDWHILE
 
-WAIT 800
+WAIT 600
 camera_restore_if_fail:
 SET_TIME_SCALE 1.0
 RESTORE_CAMERA_JUMPCUT
@@ -516,7 +516,7 @@ WHILE IS_CAR_IN_AIR_PROPER players_car_usj
 
 ENDWHILE
 
-WAIT 800
+WAIT 600
 camera_restore_if_passed:
 SET_TIME_SCALE 1.0
 RESTORE_CAMERA_JUMPCUT

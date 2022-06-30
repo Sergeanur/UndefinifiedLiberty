@@ -575,7 +575,7 @@ ENDIF
 
 // BANK ROBBERY CUT SCENE**************************************************************************************
 
-CLEAR_AREA 1037.3 -699.6 15.0 4.0 TRUE
+CLEAR_AREA 1037.3 -699.6 15.0 6.0 TRUE
 SET_PED_DENSITY_MULTIPLIER 0.0
 
 SET_PLAYER_CONTROL Player OFF

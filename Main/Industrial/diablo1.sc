@@ -472,7 +472,7 @@ car3_z_d1 = cp2_z_d1
 
 ADD_BLIP_FOR_COORD player_x_d1 player_y_d1 player_z_d1 blip_chase_d1
 ADD_BLIP_FOR_COORD_OLD blip_2nd_x blip_2nd_y blip_2nd_z PURPLE BLIP_ONLY second_blip
-CHANGE_BLIP_SCALE second_blip 3
+CHANGE_BLIP_SCALE second_blip 2
 DIM_BLIP second_blip TRUE
 CAR_GOTO_COORDINATES car1_d1 car1_x_d1 car1_y_d1 car1_z_d1
 CAR_GOTO_COORDINATES car2_d1 car2_x_d1 car2_y_d1 car2_z_d1
@@ -686,7 +686,7 @@ IF LOCATE_PLAYER_IN_CAR_3D player player_x_d1 player_y_d1 player_z_d1 6.0 6.0 6.
 
 	ADD_BLIP_FOR_COORD_OLD blip_2nd_x blip_2nd_y blip_2nd_z PURPLE BLIP_ONLY second_blip
 	DIM_BLIP second_blip ON
-	CHANGE_BLIP_SCALE second_blip 3
+	CHANGE_BLIP_SCALE second_blip 2
 	ADD_BLIP_FOR_COORD player_x_d1 player_y_d1 player_z_d1 blip_chase_d1
 
 ENDIF

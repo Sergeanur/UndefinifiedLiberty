@@ -588,6 +588,7 @@ OR mafia_13_flag < 3
 			MARK_MODEL_AS_NO_LONGER_NEEDED luigiclubout
 			MARK_MODEL_AS_NO_LONGER_NEEDED luigiineerclub
 			MARK_MODEL_AS_NO_LONGER_NEEDED ind_customroad016
+			DO_FADE 250 FADE_IN
 			skip_flag = 2
 			beamer1_health = 0
 		ENDIF
@@ -615,6 +616,7 @@ OR mafia_13_flag < 3
 				MARK_MODEL_AS_NO_LONGER_NEEDED luigiclubout
 				MARK_MODEL_AS_NO_LONGER_NEEDED luigiineerclub
 				MARK_MODEL_AS_NO_LONGER_NEEDED ind_customroad016
+				DO_FADE 250 FADE_IN
 				beamer1_health = 0
 			ENDIF
 		ENDIF

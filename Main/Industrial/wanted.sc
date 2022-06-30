@@ -40,6 +40,7 @@ info_time_start = 0
 flag_info = 0
 flag_copcar_progress = 0
 flag_swat_progress = 0
+flag_intro_jump = 0
 wanted_level = 0
 
 
@@ -100,12 +101,12 @@ WHILE flag_info < 13
 		
 		CREATE_CAR CAR_POLICE 1110.0 -823.0 15.0 copcar_info
 		SET_CAR_HEADING copcar_info 330.0
-		CREATE_CHAR_INSIDE_CAR copcar_info PEDTYPE_COP PED_COP cop_info
+		CREATE_CHAR_INSIDE_CAR copcar_info PEDTYPE_CIVMALE PED_COP cop_info
 		//CAR_SET_IDLE copcar_info
 		
 		CREATE_CAR CAR_POLICE 1105.0 -828.0 15.0 copcar2_info
 		SET_CAR_HEADING copcar2_info 330.0
-		CREATE_CHAR_INSIDE_CAR copcar2_info PEDTYPE_COP PED_COP cop2_info
+		CREATE_CHAR_INSIDE_CAR copcar2_info PEDTYPE_CIVMALE PED_COP cop2_info
 		//CAR_SET_IDLE copcar2_info
 
 		CREATE_CAR CAR_DIABLOS 1115.0 -818.0 15.0 diablocar_info
@@ -122,8 +123,10 @@ WHILE flag_info < 13
 		flag_info = 1
 	ENDIF
 
-	GET_GAME_TIMER info_time_now
-	info_time_lapsed = info_time_now - info_time_start
+	IF flag_intro_jump = 0
+		GET_GAME_TIMER info_time_now
+		info_time_lapsed = info_time_now - info_time_start
+	ENDIF
 	
 	IF info_time_lapsed > 3500
 	AND flag_info = 1
@@ -170,8 +173,8 @@ WHILE flag_info < 13
 		SET_CAR_HEADING swatvan_info 90.0
 		LOCK_CAR_DOORS swatvan_info CARLOCK_UNLOCKED
 		CAR_SET_IDLE swatvan_info
-		CREATE_CHAR PEDTYPE_COP PED_SWAT 1138.0 -671.0 15.0 swat2_info
-		CREATE_CHAR PEDTYPE_COP PED_SWAT 1137.8 -661.3 15.0 swat1_info
+		CREATE_CHAR PEDTYPE_CIVMALE PED_SWAT 1138.0 -671.0 15.0 swat2_info
+		CREATE_CHAR PEDTYPE_CIVMALE PED_SWAT 1137.8 -661.3 15.0 swat1_info
 		GIVE_WEAPON_TO_CHAR swat1_info WEAPONTYPE_M16 60
 		SET_CHAR_HEADING swat2_info 110.0
 		SET_CHAR_HEADING swat1_info 80.0
@@ -280,6 +283,15 @@ WHILE flag_info < 13
 			WAIT 0
 		ENDWHILE
 		REMOVE_PICKUP bribe_pickup
+		DELETE_CHAR diablo_info
+		DELETE_CAR diablocar_info
+		DELETE_CHAR cop_info
+		DELETE_CAR copcar_info
+		DELETE_CHAR cop2_info
+		DELETE_CAR copcar2_info
+		DELETE_CHAR swat1_info
+		DELETE_CHAR swat2_info
+		DELETE_CAR swatvan_info
 		//REMOVE_PICKUP armour_pickup_info
 		RESTORE_CAMERA_JUMPCUT
 		//SWITCH_WIDESCREEN off
@@ -333,6 +345,15 @@ WHILE flag_info < 13
 			SET_CAR_DRIVING_STYLE  swatvan_info 3
 			SWITCH_CAR_SIREN swatvan_info ON
 			flag_swat_progress = 2
+		ENDIF
+	ENDIF
+				
+	IF flag_intro_jump = 0
+	AND flag_info < 12
+		IF IS_BUTTON_PRESSED PAD1 CROSS
+			info_time_lapsed = 34001
+			flag_info = 12
+			flag_intro_jump = 1
 		ENDIF
 	ENDIF
 

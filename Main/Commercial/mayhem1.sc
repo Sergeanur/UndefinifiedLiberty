@@ -223,6 +223,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_1 y_1 z_1 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_1 y_1 z_1 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_1 y_1 z_1 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_1
 			flag_blip_1 = 1
@@ -234,6 +235,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_2 y_2 z_2 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_2 y_2 z_2 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_2 y_2 z_2 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_2
 			flag_blip_2 = 1
@@ -245,6 +247,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_3 y_3 z_3 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_3 y_3 z_3 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_3 y_3 z_3 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_3
 			flag_blip_3 = 1
@@ -256,6 +259,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_4 y_4 z_4 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_4 y_4 z_4 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_4 y_4 z_4 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_4
 			flag_blip_4 = 1
@@ -267,6 +271,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_5 y_5 z_5 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_5 y_5 z_5 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_5 y_5 z_5 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_5
 			flag_blip_5 = 1
@@ -278,6 +283,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_6 y_6 z_6 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_6 y_6 z_6 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_6 y_6 z_6 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_6
 			flag_blip_6 = 1
@@ -289,6 +295,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_7 y_7 z_7 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_7 y_7 z_7 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_7 y_7 z_7 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_7
 			flag_blip_7 = 1
@@ -300,6 +307,8 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_8 y_8 z_8 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_8 y_8 z_8 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_8 y_8 z_8 SOUND_PART_MISSION_COMPLETE
+			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_8
 			flag_blip_8 = 1
 			PRINT_WITH_NUMBER_NOW (MM_1_B) counter_4x4_pickups 3000 1
@@ -310,6 +319,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_9 y_9 z_9 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_9 y_9 z_9 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_9 y_9 z_9 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_9
 			flag_blip_9 = 1
@@ -321,6 +331,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_10 y_10 z_10 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_10 y_10 z_10 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_10 y_10 z_10 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_10
 			flag_blip_10 = 1
@@ -332,6 +343,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_11 y_11 z_11 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_11 y_11 z_11 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_11 y_11 z_11 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_11
 			flag_blip_11 = 1
@@ -343,6 +355,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_12 y_12 z_12 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_12 y_12 z_12 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_12 y_12 z_12 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_12
 			flag_blip_12 = 1
@@ -354,6 +367,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_13 y_13 z_13 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_13 y_13 z_13 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_13 y_13 z_13 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_13
 			flag_blip_13 = 1
@@ -365,6 +379,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_14 y_14 z_14 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_14 y_14 z_14 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_14 y_14 z_14 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_14
 			flag_blip_14 = 1
@@ -376,6 +391,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_15 y_15 z_15 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_15 y_15 z_15 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_15 y_15 z_15 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_15
 			flag_blip_15 = 1
@@ -387,6 +403,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_16 y_16 z_16 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_16 y_16 z_16 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_16 y_16 z_16 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_16
 			flag_blip_16 = 1
@@ -398,6 +415,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_17 y_17 z_17 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_17 y_17 z_17 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_17 y_17 z_17 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_17
 			flag_blip_17 = 1
@@ -409,6 +427,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_18 y_18 z_18 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_18 y_18 z_18 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_18 y_18 z_18 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_18
 			flag_blip_18 = 1
@@ -420,6 +439,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_19 y_19 z_19 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_19 y_19 z_19 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_19 y_19 z_19 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_19
 			flag_blip_19 = 1
@@ -431,6 +451,7 @@ WHILE counter_4x4_pickups < 20
 		DRAW_CORONA x_20 y_20 z_20 1.0 CORONATYPE_HEX FLARETYPE_NONE 0 200 200
 		IF LOCATE_PLAYER_IN_CAR_3D player x_20 y_20 z_20 2.0 2.0 2.0 false
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_20 y_20 z_20 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 5000
 			REMOVE_BLIP blip_20
 			flag_blip_20 = 1

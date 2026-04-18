@@ -860,15 +860,6 @@ PRINT_BIG ( M_FAIL ) 2000 1
 REMOVE_BLIP blip_kenji_love2
 REMOVE_CHAR_ELEGANTLY kenji
 
-IF IS_PLAYER_PLAYING player
-	WHILE IS_PLAYER_IN_AREA_3D player carpark_minx carpark_miny carpark_minz carpark_maxx carpark_maxy carpark_maxz false
-		WAIT 0
-		IF NOT IS_PLAYER_PLAYING player
-			RETURN
-		ENDIF
-	ENDWHILE
-ENDIF
-
 RETURN
 
    

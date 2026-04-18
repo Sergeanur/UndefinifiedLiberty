@@ -959,6 +959,7 @@ OR NOT HAS_MODEL_LOADED cut_obj3
 ENDWHILE
 
 WHILE NOT HAS_MODEL_LOADED cut_obj4
+OR NOT HAS_MODEL_LOADED cut_obj5
 OR NOT HAS_MODEL_LOADED csitecutscene
 	WAIT 0
 ENDWHILE
@@ -1203,7 +1204,7 @@ WHILE cs_time < 41684
 	GET_CUTSCENE_TIME cs_time
 ENDWHILE
 
-PRINT_NOW GTAB_K 15000 1//I'm sorry about that crazy bitch man, they all the sameï¿½..por favor??
+PRINT_NOW GTAB_K 15000 1//I'm sorry about that crazy bitch man, they all the same…..por favor??
 
 WHILE cs_time < 46468
 	WAIT 0
@@ -1273,7 +1274,7 @@ WHILE cs_time < 75150
 	GET_CUTSCENE_TIME cs_time
 ENDWHILE
 
-PRINT_NOW GTAB_U 15000 1//Please amigo, don't leave me with her, she psycho chica! Amigo? Hey AMEEEGO!!! ï¿½ï¿½.Aiiieeeeaaargghh!
+PRINT_NOW GTAB_U 15000 1//Please amigo, don't leave me with her, she psycho chica! Amigo? Hey AMEEEGO!!! …….Aiiieeeeaaargghh!
 
 WHILE cs_time < 86666
 	WAIT 0

@@ -834,14 +834,14 @@ ENDIF
 IF ambulance_pager_flag = 0
 	IF total_saved_peds > 34
 		ADD_PAGER_MESSAGE PAGEB13 140 100 1	//"Health delivered to hideout"
-		PLAYER_MADE_PROGRESS 1
+		GOSUB progress_counter1
 		ambulance_pager_flag = 1
 	ENDIF
 ENDIF
 IF ambulance_pager_flag = 1
 	IF total_saved_peds > 69
 		ADD_PAGER_MESSAGE PAGEB14 140 100 1	//"Adrenaline delivered to hideout"
-		PLAYER_MADE_PROGRESS 1
+		GOSUB progress_counter2
 		ambulance_pager_flag = 2
 	ENDIF
 ENDIF
@@ -1844,14 +1844,14 @@ IF saved_peds = number_of_injured_peds
 	IF ambulance_pager_flag = 0
 		IF total_saved_peds > 34
 			ADD_PAGER_MESSAGE PAGEB13 140 100 1	//"Health delivered to hideout"
-			PLAYER_MADE_PROGRESS 1
+			GOSUB progress_counter1
 			ambulance_pager_flag = 1
 		ENDIF
 	ENDIF
 	IF ambulance_pager_flag = 1
 		IF total_saved_peds > 69
 			ADD_PAGER_MESSAGE PAGEB14 140 100 1	//"Adrenaline delivered to hideout"
-			PLAYER_MADE_PROGRESS 1
+			GOSUB progress_counter2
 			ambulance_pager_flag = 2
 		ENDIF
 	ENDIF
@@ -2012,6 +2012,19 @@ ADD_ONE_OFF_SOUND 0.0 0.0 0.0 SOUND_PART_MISSION_COMPLETE
 ++ saved_peds
 REGISTER_LIFE_SAVED
 
+RETURN
+//////////////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////////
+progress_counter1:
+	PLAYER_MADE_PROGRESS 1
+RETURN
+//////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////
+progress_counter2:
+	PLAYER_MADE_PROGRESS 1
 RETURN
 //////////////////////////////////////////////////////////////////////
 

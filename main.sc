@@ -4737,6 +4737,7 @@ WAIT 0
 			IF flag_player_on_mission = 0
 				IF CAN_PLAYER_START_MISSION Player
 
+					rays_cutscene_flag = 1
 					MAKE_PLAYER_SAFE_FOR_CUTSCENE player
 
 					SET_FADING_COLOUR 0 0 0
@@ -4790,6 +4791,7 @@ WAIT 0
 			IF flag_player_on_mission = 0
 				IF CAN_PLAYER_START_MISSION Player
 
+					rays_cutscene_flag = 1
 					MAKE_PLAYER_SAFE_FOR_CUTSCENE Player
 
 					SET_FADING_COLOUR 0 0 0
@@ -4842,6 +4844,7 @@ WAIT 0
 			IF flag_player_on_mission = 0
 				IF CAN_PLAYER_START_MISSION Player
 
+					rays_cutscene_flag = 1
 					MAKE_PLAYER_SAFE_FOR_CUTSCENE player
 
 					SET_FADING_COLOUR 0 0 0
@@ -4898,6 +4901,7 @@ WAIT 0
 			IF flag_player_on_mission = 0
 				IF CAN_PLAYER_START_MISSION Player
 
+					rays_cutscene_flag = 1
 					MAKE_PLAYER_SAFE_FOR_CUTSCENE player
 
 					SET_FADING_COLOUR 0 0 0
@@ -4952,6 +4956,7 @@ WAIT 0
 			IF flag_player_on_mission = 0
 				IF CAN_PLAYER_START_MISSION Player
 
+					rays_cutscene_flag = 1
 					MAKE_PLAYER_SAFE_FOR_CUTSCENE Player
 
 					SET_FADING_COLOUR 0 0 0

@@ -475,6 +475,8 @@ ENDIF
 
 ENDWHILE
 
+BLOW_UP_RC_BUGGY
+
 }
 
 GOTO mission_hood2_passed

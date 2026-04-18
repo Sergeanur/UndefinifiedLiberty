@@ -186,6 +186,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_1 y_1 z_1 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_1
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_1 y_1 z_1 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_1 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1
@@ -197,6 +198,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_2 y_2 z_2 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_2
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_2 y_2 z_2 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_2 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1
@@ -208,6 +210,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_3 y_3 z_3 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_3
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_3 y_3 z_3 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_3 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1
@@ -219,6 +222,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_4 y_4 z_4 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_4
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_4 y_4 z_4 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_4 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1
@@ -230,6 +234,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_5 y_5 z_5 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_5
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_5 y_5 z_5 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_5 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1
@@ -241,6 +246,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_6 y_6 z_6 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_6
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_6 y_6 z_6 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_6 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1
@@ -252,6 +258,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_7 y_7 z_7 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_7
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_7 y_7 z_7 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_7 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1
@@ -263,6 +270,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_8 y_8 z_8 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_8
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_8 y_8 z_8 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_8 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1
@@ -274,6 +282,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_9 y_9 z_9 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_9
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_9 y_9 z_9 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_9 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1
@@ -285,6 +294,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_10 y_10 z_10 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_10
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_10 y_10 z_10 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_10 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1
@@ -296,6 +306,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_11 y_11 z_11 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_11
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_11 y_11 z_11 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_11 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1
@@ -307,6 +318,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_12 y_12 z_12 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_12
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_12 y_12 z_12 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_12 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1
@@ -318,6 +330,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_13 y_13 z_13 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_13
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_13 y_13 z_13 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_13 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1
@@ -329,6 +342,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_14 y_14 z_14 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_14
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_14 y_14 z_14 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_14 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1
@@ -340,6 +354,7 @@ WHILE counter_4x4_pickups < 15
 		IF LOCATE_PLAYER_IN_CAR_3D player x_15 y_15 z_15 2.5 2.5 3.5 false
 			REMOVE_BLIP blip_15
 			++ counter_4x4_pickups
+			ADD_ONE_OFF_SOUND x_15 y_15 z_15 SOUND_PART_MISSION_COMPLETE
 			timer_4x4 = timer_4x4 + 20000
 			flag_blip_15 = 1
 			PRINT_WITH_NUMBER_NOW (T4X4_1B) counter_4x4_pickups 3000 1

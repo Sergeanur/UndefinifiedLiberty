@@ -39,6 +39,7 @@ info_time_start = 0
 flag_info = 0
 flag_bottom = 0
 wanted_level = 0
+flag_intro_jump = 0
 //Set Coords
 
 
@@ -72,9 +73,12 @@ WHILE flag_info < 8
 		DO_FADE 1500 FADE_OUT
 		WAIT 1500*/
 		CLEAR_AREA 1141.0 -622.0 14.8 30.0 true
+		CLEAR_AREA 1125.77 -594.0 14.8 10.0 true
+		SET_CAR_DENSITY_MULTIPLIER 0.0
+		SET_PED_DENSITY_MULTIPLIER 0.0
 		CREATE_CAR CAR_AMBULANCE 1140.2 -621.5 14.8 amb_info
 		SET_CAR_HEADING amb_info 90.0
-		CREATE_CHAR PEDTYPE_MEDIC PED_MEDIC 1136.75 -617.8 14.7 medic_info
+		CREATE_CHAR PEDTYPE_CIVMALE PED_MEDIC 1136.75 -617.8 14.7 medic_info
 		SET_CHAR_HEADING medic_info 25.0
 		CHAR_SET_IDLE medic_info
 		SET_CHAR_STAY_IN_SAME_PLACE	medic_info true
@@ -87,10 +91,13 @@ WHILE flag_info < 8
 		flag_info = 1
 	ENDIF
 	
-	GET_GAME_TIMER info_time_now
-	info_time_lapsed = info_time_now - info_time_start
+	IF flag_intro_jump = 0
+		GET_GAME_TIMER info_time_now
+		info_time_lapsed = info_time_now - info_time_start
+	ENDIF
 	
 	IF info_time_lapsed > 3000
+	AND flag_info < 2
 		FLASH_HUD_OBJECT -1
 	ENDIF 
 
@@ -151,6 +158,8 @@ WHILE flag_info < 8
 		WHILE GET_FADING_STATUS
 			WAIT 0
 		ENDWHILE
+		DELETE_CAR amb_info
+		DELETE_CHAR medic_info
 		REMOVE_PICKUP health_pickup_info
 		REMOVE_PICKUP armour_pickup_info
 		RESTORE_CAMERA_JUMPCUT
@@ -166,6 +175,7 @@ WHILE flag_info < 8
 	ENDIF
 	
 	IF info_time_lapsed > 16500
+	AND flag_info < 7
 		IF NOT IS_CAR_DEAD amb_info
 		AND NOT IS_CHAR_DEAD medic_info
 			IF IS_CHAR_IN_CAR medic_info amb_info
@@ -176,6 +186,15 @@ WHILE flag_info < 8
 				CAR_GOTO_COORDINATES amb_info 1023.0 -480.0 19.7
 				flag_bottom = 1
 			ENDIF
+		ENDIF
+	ENDIF
+
+	IF flag_intro_jump = 0
+	AND flag_info < 7
+		IF IS_BUTTON_PRESSED PAD1 CROSS
+			info_time_lapsed = 24001
+			flag_info = 7
+			flag_intro_jump = 1
 		ENDIF
 	ENDIF
 
@@ -199,6 +218,9 @@ MARK_CHAR_AS_NO_LONGER_NEEDED medic_info
 
 MARK_MODEL_AS_NO_LONGER_NEEDED CAR_AMBULANCE
 MARK_MODEL_AS_NO_LONGER_NEEDED PED_MEDIC
+
+SET_CAR_DENSITY_MULTIPLIER 1.0
+SET_PED_DENSITY_MULTIPLIER 1.0
 
 //REMOVE_PICKUP heal_info
 flag_player_on_mission = 0

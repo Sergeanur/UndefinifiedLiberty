@@ -231,8 +231,6 @@ flag_player_on_mission = 1
 
 flag_player_on_frankie_mission = 1
 
-REGISTER_MISSION_GIVEN
-
 WAIT 0
 
 flag_on_frankie3 = 0
@@ -749,6 +747,7 @@ MARK_MODEL_AS_NO_LONGER_NEEDED mak_bomb01
 
 IF flag_taken_money_off_fm3 = 0
 	ADD_SCORE player -100000
+	REGISTER_MISSION_GIVEN
 	flag_taken_money_off_fm3 = 1
 ENDIF
 

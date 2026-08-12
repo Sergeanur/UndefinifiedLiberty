@@ -9,6 +9,7 @@ This repo has versions commitied on top of each other in chronological order, so
 You can browse commit history to reach these versions in the repo:
 - **ps2_1.40** - original bugged PS2 european release
 - **ps2_1.60** - correct PS2 and PC release
+- **xbox** - Xbox release
 
 ## How to compile
 
@@ -17,6 +18,7 @@ To patch miss2.exe, put it in `patch` directory and launch **xdelta3.bat**. Now 
 
 ## Changelog
 
+- **2026/08/12**: added Xbox version
 - **2026/04/18**: fixed SET_TOTAL_NUMBER_OF_MISSIONS having set an explicit non-zero value
 - **2022/06/30**: removed a plague leftover comment in main.sc/main_d.sc
 - **2022/06/17**: original release
